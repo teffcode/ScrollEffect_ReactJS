@@ -16,51 +16,48 @@ class Body extends Component {
     render(){
         return(
             <div className="body__container">
-                <div>
-                    <p className="body__title">Breakfast</p>
-                    <div className="body__food">
-                        <div className="body__content">
-                            <img src={bread} className=""/> 
-                        </div>
-                        <div className="body__content">
-                            <img src={egg} className=""/> 
-                        </div>
-                        <div className="body__content">
-                            <img src={avocado} className=""/> 
-                        </div> 
-                    </div>                                      
+                <p className="body__title">Breakfast</p>
+                <div className={this.props.classBreakfast1}>
+                    <img src={bread} className=""/> 
                 </div>
-                <div>
-                    <p className="body__title">Lunch</p>
-                    <div className="body__food">
-                        <div className="body__content">
-                            <img src={potatoes} className=""/>                        
-                        </div>
-                        <div className="body__content">
-                            <img src={salmon} className=""/>
-                        </div>
-                        <div className="body__content">
-                            <img src={asparagus} className=""/>                     
-                        </div> 
-                    </div>   
+                <div className={this.props.classBreakfast2}>
+                    <img src={egg} className=""/> 
                 </div>
-                <div>
-                    <p className="body__title">Dinner</p>
-                    <div className="body__food">
-                        <div className="body__content">
-                            <img src={carrot} className=""/>                                             
-                        </div>
-                        <div className="body__content">
-                            <img src={salad} className=""/>  
-                        </div>
-                        <div className="body__content">
-                            <img src={meat} className=""/>  
-                        </div> 
-                    </div>                                          
-                </div>
+                <div className={this.props.classBreakfast3}>
+                    <img src={avocado} className=""/> 
+                </div> 
             </div>
         );
     }
 };
 
 export default Body;
+
+// <div>
+//                     <p className="body__title">Lunch</p>
+//                     <div className={this.props.classLunch}>
+//                         <div className="body__content">
+//                             <img src={potatoes} className=""/>                        
+//                         </div>
+//                         <div className="body__content">
+//                             <img src={salmon} className=""/>
+//                         </div>
+//                         <div className="body__content">
+//                             <img src={asparagus} className=""/>                     
+//                         </div> 
+//                     </div>   
+//                 </div>
+//                 <div>
+//                     <p className="body__title">Dinner</p>
+//                     <div className={this.props.classDinner}>
+//                         <div className="body__content">
+//                             <img src={carrot} className=""/>                                             
+//                         </div>
+//                         <div className="body__content">
+//                             <img src={salad} className=""/>  
+//                         </div>
+//                         <div className="body__content">
+//                             <img src={meat} className=""/>  
+//                         </div> 
+//                     </div>                                          
+//                 </div>
