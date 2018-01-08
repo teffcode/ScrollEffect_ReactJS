@@ -16,15 +16,35 @@ class Body extends Component {
     render(){
         return(
             <div className="body__container">
-                <p className="body__title">Breakfast</p>
+                <p className={this.props.classTitle1}>• Breakfast •</p>
                 <div className={this.props.classBreakfast1}>
-                    <img src={bread} className=""/> 
+                    <img src={bread}/> 
                 </div>
                 <div className={this.props.classBreakfast2}>
-                    <img src={egg} className=""/> 
+                    <img src={egg}/> 
                 </div>
                 <div className={this.props.classBreakfast3}>
-                    <img src={avocado} className=""/> 
+                    <img src={avocado}/> 
+                </div> 
+                <p className={this.props.classTitle2}>• Lunch •</p>
+                <div className={this.props.classLunch1}>
+                    <img src={potatoes}/> 
+                </div>
+                <div className={this.props.classLunch2}>
+                    <img src={salmon}/> 
+                </div>
+                <div className={this.props.classLunch3}>
+                    <img src={asparagus}/> 
+                </div> 
+                <p className={this.props.classTitle3}>• Dinner •</p>
+                <div className={this.props.classDinner1}>
+                    <img src={carrot}/> 
+                </div>
+                <div className={this.props.classDinner2}>
+                    <img src={salad}/> 
+                </div>
+                <div className={this.props.classDinner3}>
+                    <img src={meat}/> 
                 </div> 
             </div>
         );
@@ -32,32 +52,3 @@ class Body extends Component {
 };
 
 export default Body;
-
-// <div>
-//                     <p className="body__title">Lunch</p>
-//                     <div className={this.props.classLunch}>
-//                         <div className="body__content">
-//                             <img src={potatoes} className=""/>                        
-//                         </div>
-//                         <div className="body__content">
-//                             <img src={salmon} className=""/>
-//                         </div>
-//                         <div className="body__content">
-//                             <img src={asparagus} className=""/>                     
-//                         </div> 
-//                     </div>   
-//                 </div>
-//                 <div>
-//                     <p className="body__title">Dinner</p>
-//                     <div className={this.props.classDinner}>
-//                         <div className="body__content">
-//                             <img src={carrot} className=""/>                                             
-//                         </div>
-//                         <div className="body__content">
-//                             <img src={salad} className=""/>  
-//                         </div>
-//                         <div className="body__content">
-//                             <img src={meat} className=""/>  
-//                         </div> 
-//                     </div>                                          
-//                 </div>

@@ -10,7 +10,9 @@ import food2 from "../images/food2.png";
 const MainTitle = () => (
     <div className="main__container">
         <p className="main__title">Healthy Food</p>
-        <img src={food1} className="main__image"/> 
+        <img src={food1} className="main__image1"/> 
+        <img src={food2} className="main__image1"/> 
+        <img src={food1} className="main__image1"/> 
     </div> 
 );
 

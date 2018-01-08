@@ -1,26 +1,37 @@
 .footer__container {
-    width: 650px;
+    width: 640px;
     height: 150px;
     background-color: #fe5d6f;
     opacity: 0.8;    
     border: 3px solid black;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    z-index: 4;
-    overflow: hidden;
+    align-items: center;
     margin: 20px 0;
 }
 
-.footer__title {
-    width: 460px;
-    height: 140px;
-    padding: 50px;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-size: 80px;
-    font-weight: 900;
-    background-color: #fe5d6f;
-    opacity: 0.8;
+.footer__text {
+    font-family: 'Cabin Sketch', cursive;
     color: white;
-    position: absolute;
-    z-index: 2; 
+    animation-name: made;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
+
+@keyframes made {
+    0% {
+        opacity: 0;
+        font-size: 10px;
+    }
+    50% {
+        opacity: 0.7;
+        font-size: 20px;
+    }
+    100%{
+        transform: translateZ(20px);
+        font-size: 30px;
+    }
+}
+

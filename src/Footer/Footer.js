@@ -6,10 +6,9 @@ import blogger from "../images/blogger.png";
 
 // TODO: Animation.. 
 
-const Footer = () => (
+const Footer = ({ classFooter }) => (
     <div className="footer__container">
-        <p>Made with code</p>
-        <img src={blogger} className=""/> 
+        <p className={classFooter}>Made with code</p>
     </div> 
 );
 
